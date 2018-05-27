@@ -1,0 +1,14 @@
+.example-card {
+    max-width: 600px;
+  }
+
+.example-header-image {
+  background-image: url('../../assets/image/saeed.jpg');
+  background-size: cover;
+}
+
+
+mat-card-subtitle a{
+  color: #e84747;
+  text-decoration: none;
+}

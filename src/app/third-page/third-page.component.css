@@ -1,0 +1,10 @@
+.center {
+       margin: auto;
+       padding: 10px;
+     }
+
+
+.example-header-image {
+  background-image: url('../../assets/image/saeed.jpg');
+  background-size: cover;
+}

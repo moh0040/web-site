@@ -1,0 +1,19 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+  box-shadow: 3px 0 6px rgba(0,0,0,.24);
+}
+
+mat-toolbar img{
+  width: 50px;
+  padding: 0 10px;
+}
+
+
+.example-header-image {
+  background-image: url('../../assets/image/saeed.jpg');
+  background-size: cover;
+}
