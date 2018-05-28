@@ -4,38 +4,35 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MyNavComponent } from './my-nav/my-nav.component';
-import { LayoutModule } from '@angular/cdk/layout';
-import {
-  MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatCardModule,
-  MatTooltipModule
-} from '@angular/material';
+import { MainPageComponent } from './main-page/main-page.component';
 import {AboutMeComponent} from './about-me/about-me.component';
-import { SecondPageComponent } from './second-page/second-page.component';
-import { ThirdPageComponent } from './third-page/third-page.component';
-import {HttpClientModule} from "@angular/common/http";
+import { MyProjectsComponent } from './my-projects/my-projects.component';
+import { ContactComponent } from './contact/contact.component';
+import {HttpClientModule} from '@angular/common/http';
 import { FooterComponent } from './footer/footer.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MaterialModule } from './modules/material/material.module';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import {CommonModule} from "@angular/common";
+import {CommonModule} from '@angular/common';
+import { ResumeComponent } from './resume/resume.component';
 
 
 const appRoutes: Routes = [
-  { path: 'about-me', component: AboutMeComponent},
-  { path: 'second-page', component: SecondPageComponent},
-  { path: 'third-page', component: ThirdPageComponent}
+  { path: 'app-about-me', component: AboutMeComponent},
+  { path: 'my-projects', component: MyProjectsComponent},
+  { path: 'contact', component: ContactComponent}
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    MyNavComponent,
+    MainPageComponent,
     AboutMeComponent,
-    SecondPageComponent,
-    ThirdPageComponent,
-    FooterComponent
+    MyProjectsComponent,
+    ContactComponent,
+    FooterComponent,
+    ResumeComponent
   ],
   imports: [
     HttpClientModule,
@@ -46,6 +43,7 @@ const appRoutes: Routes = [
     ReactiveFormsModule,
     CommonModule,
     FlexLayoutModule,
+
     // Material Modules in './modules/material/material.module'
     MaterialModule
   ],

@@ -1,0 +1,37 @@
+
+    <mat-toolbar color="primary">
+      <img src="./assets/image/logo.png" alt="">
+      <span>Ing. Saeed Sharifi</span>
+    </mat-toolbar>
+    <mat-tab-group>
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <mat-icon>person_pin</mat-icon><br>
+          <mat-label>About Me</mat-label>
+        </ng-template>
+        <app-about-me></app-about-me>
+      </mat-tab>
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <mat-icon>apps</mat-icon><br>
+          <mat-label>My Projects</mat-label>
+        </ng-template>
+        <app-my-projects></app-my-projects>
+      </mat-tab>
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <mat-icon>list</mat-icon><br>
+          <mat-label>Resume</mat-label>
+        </ng-template>
+        <app-resume></app-resume>
+      </mat-tab>
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <mat-icon>contact_mail</mat-icon><br>
+          <mat-label>Contact</mat-label>
+        </ng-template>
+        <app-contact></app-contact>
+      </mat-tab>
+
+    </mat-tab-group>
+    <app-footer></app-footer>
