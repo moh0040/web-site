@@ -15,7 +15,6 @@ import { MaterialModule } from './modules/material/material.module';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {CommonModule} from '@angular/common';
-import { ResumeComponent } from './resume/resume.component';
 
 
 const appRoutes: Routes = [
@@ -31,8 +30,7 @@ const appRoutes: Routes = [
     AboutMeComponent,
     MyProjectsComponent,
     ContactComponent,
-    FooterComponent,
-    ResumeComponent
+    FooterComponent
   ],
   imports: [
     HttpClientModule,
